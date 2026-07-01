@@ -1,4 +1,5 @@
 package spell;
+// Implementa el hechizo Expecto Patronum para proteger o apoyar.
 
 import character.Character;
 

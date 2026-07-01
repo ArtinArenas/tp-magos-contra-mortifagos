@@ -1,4 +1,5 @@
 package spell;
+// Implementa el hechizo Cruciatus como ataque de dolor intenso.
 
 import character.Character;
 

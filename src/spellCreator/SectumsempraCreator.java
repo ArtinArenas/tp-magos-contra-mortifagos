@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Sectumsempra.
 
 import spell.Spell;
 import spell.Sectumsempra;

@@ -1,4 +1,5 @@
 package spell;
+// Implementa un hechizo defensivo de protección básica.
 
 import character.Character;
 

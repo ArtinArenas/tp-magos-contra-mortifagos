@@ -1,4 +1,5 @@
 package spell;
+// Implementa el hechizo Expelliarmus para desarmar al enemigo.
 
 import character.Character;
 

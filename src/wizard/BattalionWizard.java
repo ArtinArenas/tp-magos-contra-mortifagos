@@ -1,4 +1,5 @@
 package wizard;
+// Agrupa a varios magos en una unidad de combate.
 
 import java.util.ArrayList;
 import java.util.List;

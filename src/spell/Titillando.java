@@ -1,4 +1,5 @@
 package spell;
+// Implementa un hechizo que causa un efecto ligero y peculiar.
 
 import character.Character;
 

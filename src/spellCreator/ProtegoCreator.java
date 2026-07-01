@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Protego.
 
 import spell.Spell;
 import spell.Protego;

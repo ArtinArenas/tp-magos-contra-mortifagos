@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Tempest Jinx.
 
 import spell.Spell;
 import spell.TempestJinx;

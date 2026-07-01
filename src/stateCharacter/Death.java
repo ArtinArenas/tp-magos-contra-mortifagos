@@ -1,4 +1,5 @@
 package stateCharacter;
+// Representa el estado de muerte de un personaje.
 
 import character.Character;
 

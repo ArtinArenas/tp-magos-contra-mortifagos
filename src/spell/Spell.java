@@ -1,4 +1,5 @@
 package spell;
+// Define la estructura base de todos los hechizos del proyecto.
 
 import java.util.Objects;
 

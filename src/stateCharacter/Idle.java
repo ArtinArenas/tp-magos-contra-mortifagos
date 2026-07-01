@@ -1,4 +1,5 @@
 package stateCharacter;
+// Representa el estado neutral del personaje.
 
 import character.Character;
 import exceptions.AllyFireException;

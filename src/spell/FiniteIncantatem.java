@@ -1,4 +1,5 @@
 package spell;
+// Implementa un hechizo de disipación o contrainte.
 
 import character.Character;
 

@@ -1,4 +1,5 @@
 package spell;
+// Implementa el hechizo Confundo para desorientar al objetivo.
 
 import character.Character;
 

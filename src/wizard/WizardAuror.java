@@ -1,4 +1,5 @@
 package wizard;
+// Representa a un auror con rol de protección y combate.
 
 import java.util.Random;
 

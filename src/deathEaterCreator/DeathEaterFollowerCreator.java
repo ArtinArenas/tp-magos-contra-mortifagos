@@ -1,4 +1,5 @@
 package deathEaterCreator;
+// Crea seguidores mortífagos con sus valores iniciales.
 
 import deathEater.DeathEater;
 import deathEater.DeathEaterFollower;

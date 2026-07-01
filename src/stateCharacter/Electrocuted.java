@@ -1,4 +1,5 @@
 package stateCharacter;
+// Representa el estado de un personaje electrificado.
 
 import character.Character;
 import exceptions.AllyFireException;

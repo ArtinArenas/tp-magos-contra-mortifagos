@@ -1,4 +1,5 @@
 package wizardCreator;
+// Define la creación base de los magos del juego.
 
 import wizard.Wizard;
 

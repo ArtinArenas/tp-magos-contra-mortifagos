@@ -1,4 +1,5 @@
 package spell;
+// Implementa un hechizo ofensivo que causa heridas graves.
 
 import character.Character;
 

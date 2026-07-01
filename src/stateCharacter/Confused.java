@@ -1,4 +1,5 @@
 package stateCharacter;
+// Representa el estado de confusión temporal del personaje.
 
 import character.Character;
 import exceptions.AllyFireException;

@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Titillando.
 
 import spell.Spell;
 import spell.Titillando;

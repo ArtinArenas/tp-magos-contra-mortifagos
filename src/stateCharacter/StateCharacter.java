@@ -1,4 +1,5 @@
 package stateCharacter;
+// Define la interfaz de los estados del personaje.
 
 import character.Character;
 

@@ -1,4 +1,5 @@
 package wizard;
+// Representa a un estudiante de magia del proyecto.
 
 import java.util.Random;
 

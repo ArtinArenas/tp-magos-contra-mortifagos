@@ -1,4 +1,5 @@
 package spellCreator;
+// Define la creación base de los hechizos del juego.
 
 import spell.Spell;
 

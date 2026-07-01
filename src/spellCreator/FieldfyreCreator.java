@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Fieldfyre.
 
 import spell.Spell;
 import spell.Fieldfyre;
