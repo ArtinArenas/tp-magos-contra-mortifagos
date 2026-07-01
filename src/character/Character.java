@@ -3,9 +3,14 @@ package character;
 import java.util.ArrayList;
 import java.util.List;
 import spell.Spell;
+import spell.SpellType;
 import spell.SpellCategory;
 import stateCharacter.Idle;
 import stateCharacter.StateCharacter;
+import exceptions.AllyFireException;
+import exceptions.AutoAttackException;
+import exceptions.HelpEnemyException;
+import exceptions.SpellTypeException;
 
 public abstract class Character {
 	private String name;
@@ -190,5 +195,32 @@ public abstract class Character {
 	
 	public void confuse(int duration) {
 		state = state.confuse(this, duration);
+	}
+
+	// Metodo que permite a los personajes lanzar un hechizo
+	public void castSpell(Character target, Spell spell) {
+		if(spell == null) {
+			throw new IllegalArgumentException("El hechizo no puede ser nulo");
+		}
+		if(target == null) {
+			throw new IllegalArgumentException("El objetivo no puede ser nulo");
+		}
+		//Valido que el hechizo pertenezca al personaje
+		if(!spells.contains(spell)) {
+			throw new SpellTypeException("El hechizo no pertenece al personaje");
+		}
+		//Valido que el objetivo sea valido para el tipo de hechizo
+		if(spell.getType() == SpellType.OFFENSIVE && target == this) {
+			throw new AutoAttackException("No se puede lanzar un hechizo ofensivo sobre uno mismo");
+		}
+		if(spell.getType() == SpellType.OFFENSIVE && target.type == this.type) {
+			throw new AllyFireException("No se puede lanzar un hechizo ofensivo sobre un miembro del equipo");
+		}
+		
+		if(spell.getType() == SpellType.SUPPORT && target.type != this.type) {
+			throw new HelpEnemyException("No se puede lanzar un hechizo de soporte sobre un enemigo");
+		}
+		
+		spell.use(this, target);
 	}
 }
