@@ -1,4 +1,5 @@
 package character;
+// Indica si un personaje puede ser reclutado para la batalla.
 
 import java.util.Random;
 

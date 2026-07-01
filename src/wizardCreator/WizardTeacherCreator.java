@@ -1,4 +1,5 @@
 package wizardCreator;
+// Crea profesores de magia con sus atributos base.
 
 import wizard.Wizard;
 import wizard.WizardTeacher;

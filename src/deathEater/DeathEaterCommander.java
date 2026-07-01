@@ -1,4 +1,5 @@
 package deathEater;
+// Representa al comandante de los mortífagos.
 
 import character.Character;
 

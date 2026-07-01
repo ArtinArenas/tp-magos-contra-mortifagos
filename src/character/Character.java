@@ -1,4 +1,5 @@
 package character;
+// Representa a un personaje del juego con atributos, estados y hechizos.
 
 import java.util.ArrayList;
 import java.util.List;
@@ -122,7 +123,7 @@ public abstract class Character {
 	}
 
 	public List<Spell> getSpells() {
-		return spells;
+		return new ArrayList<>(spells); // Devuelve una copia y no la referencia a la lista
 	}
 	
 	public void receiveDamage(int damage) {
@@ -139,5 +140,37 @@ public abstract class Character {
 		}
 		
 		healthPoints -= damage - getDefense() * 0.25;
+	}
+
+		public boolean castSpell(Character target, Spell spell) { //Retorna true si el hechizo se lanza correctamente, false si no se puede lanzar
+		try{
+
+			if(spell == null) {
+				throw new IllegalArgumentException("El hechizo no puede ser nulo");
+			}
+
+			if(target == null) {
+				throw new IllegalArgumentException("El objetivo no puede ser nulo");
+			}
+
+			//Valido que el hechizo pertenezca al personaje
+			if(!spells.contains(spell)) {
+				throw new IllegalArgumentException("El hechizo no pertenece al personaje");
+			}
+
+			//Valido que el objetivo sea valido para el tipo de hechizo
+			if(spell.getType() == Spell.SpellType.OFFENSIVE && target == this) {
+				throw new IllegalArgumentException("No se puede lanzar un hechizo ofensivo sobre uno mismo");
+			}
+			
+			
+
+			spell.use(this, target);
+
+		} catch (IllegalArgumentException e) {
+			return false;
+		}
+
+		return true;
 	}
 }

@@ -1,4 +1,5 @@
 package spell;
+// Implementa una protección amplia para varios objetivos.
 
 import character.Character;
 

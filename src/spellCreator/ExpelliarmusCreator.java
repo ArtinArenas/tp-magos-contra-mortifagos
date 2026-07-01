@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Expelliarmus.
 
 import spell.Spell;
 import spell.Expelliarmus;

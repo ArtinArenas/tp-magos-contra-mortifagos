@@ -1,4 +1,5 @@
 package deathEater;
+// Agrupa a varios mortífagos en una unidad.
 
 import java.util.ArrayList;
 import java.util.List;

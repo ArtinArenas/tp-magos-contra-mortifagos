@@ -1,4 +1,5 @@
 package stateCharacter;
+// Representa el estado de invulnerabilidad del personaje.
 
 import character.Character;
 import exceptions.AutoAttackException;

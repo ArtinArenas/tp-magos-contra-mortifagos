@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Expecto Patronum.
 
 import spell.Spell;
 import spell.ExpectoPatronum;

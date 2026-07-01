@@ -1,4 +1,5 @@
 package spell;
+// Implementa un hechizo de daño elemental con efecto de tormenta.
 
 import character.Character;
 

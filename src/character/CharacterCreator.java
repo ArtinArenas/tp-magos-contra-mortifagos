@@ -1,4 +1,5 @@
 package character;
+// Define la creación base de los personajes del juego.
 
 import deathEater.DeathEater;
 import wizard.Wizard;

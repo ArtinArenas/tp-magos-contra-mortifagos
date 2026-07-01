@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Cruciatus.
 
 import spell.Spell;
 import spell.Crucio;

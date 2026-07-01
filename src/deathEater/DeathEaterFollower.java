@@ -1,4 +1,5 @@
 package deathEater;
+// Representa a un seguidor de los mortífagos.
 
 import character.Character;
 

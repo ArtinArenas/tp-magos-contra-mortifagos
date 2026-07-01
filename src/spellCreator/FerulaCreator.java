@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Ferula.
 
 import spell.Spell;
 import spell.Ferula;

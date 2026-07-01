@@ -1,4 +1,5 @@
 package wizard;
+// Representa a un estudiante de magia del proyecto.
 
 import java.util.Random;
 
@@ -18,7 +19,7 @@ public class WizardStudent extends Character implements Wizard {
 	}
 	
 	@Override
-	public void attack(Character character) {
+	public void attack(Character character, Spell spell) {
 		// TODO Auto-generated method stub
 		
 	}

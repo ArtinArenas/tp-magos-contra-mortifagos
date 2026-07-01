@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Confundo.
 
 import spell.Spell;
 import spell.Confundo;

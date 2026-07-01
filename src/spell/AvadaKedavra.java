@@ -1,4 +1,5 @@
 package spell;
+// Implementa el hechizo Avada Kedavra como ataque letal.
 
 import character.Character;
 

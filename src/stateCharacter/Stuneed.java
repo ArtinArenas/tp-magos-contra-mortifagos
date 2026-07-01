@@ -1,4 +1,5 @@
 package stateCharacter;
+// Representa el estado de aturdimiento del personaje.
 
 import character.Character;
 import exceptions.AutoAttackException;

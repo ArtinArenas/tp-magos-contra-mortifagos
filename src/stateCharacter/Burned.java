@@ -1,4 +1,5 @@
 package stateCharacter;
+// Representa el estado de un personaje quemado por daño de fuego.
 
 import character.Character;
 import exceptions.AutoAttackException;

@@ -1,4 +1,5 @@
 package spellCreator;
+// Crea instancias del hechizo Pertificus Totalus.
 
 import spell.Spell;
 import spell.PertificusTotalus;

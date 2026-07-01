@@ -1,4 +1,5 @@
 package spell;
+// Implementa un hechizo de fuego de alto impacto.
 
 import character.Character;
 

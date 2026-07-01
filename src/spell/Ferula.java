@@ -1,4 +1,5 @@
 package spell;
+// Implementa un hechizo de apoyo o curación breve.
 
 import character.Character;
 

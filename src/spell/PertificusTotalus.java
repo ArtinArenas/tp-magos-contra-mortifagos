@@ -1,4 +1,5 @@
 package spell;
+// Implementa un hechizo que inmoviliza al objetivo.
 
 import character.Character;
 
