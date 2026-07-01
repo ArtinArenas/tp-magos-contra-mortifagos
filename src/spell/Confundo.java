@@ -14,10 +14,10 @@ public class Confundo extends Spell {
 		if(Math.random() < this.getAccuracy()) {
 			System.out.println(caster.getName() + " le lanzó " + this.getName() + " a " + target.getName());
 			
-			if (caster.getAffinity(getCategory()) < 30) {
-				// Invulnerable por 1 turno
+			if (caster.getAffinity(getCategory()) <= 30) {
+				target.confuse(1);
 			} else {
-				// Invulnerable por 3 turnos
+				target.confuse(3);
 			}
 			
 		} else {

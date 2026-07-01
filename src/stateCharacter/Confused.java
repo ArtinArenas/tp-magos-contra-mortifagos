@@ -2,6 +2,7 @@ package stateCharacter;
 // Representa el estado de confusión temporal del personaje.
 
 import character.Character;
+import exceptions.AllyFireException;
 import exceptions.AutoAttackException;
 import exceptions.SpellTypeException;
 import spell.Spell;
@@ -32,6 +33,10 @@ public class Confused extends StateCharacter {
 		
 		if(spell.getType() == SpellType.SUPPORT) {
 			throw new SpellTypeException("No pueden supportear a los rivales");
+		}
+		
+		if(attacker.getType() == target.getType()) {
+			throw new AllyFireException("No puedes atacar a un aliado");
 		}
 		
 		duration --;
@@ -65,6 +70,10 @@ public class Confused extends StateCharacter {
 		
 		if(spell.getType() == SpellType.OFFENSIVE) {
 			throw new SpellTypeException("No pueden atacar a los aliados");
+		}
+		
+		if(support.getType() == target.getType()) {
+			throw new AllyFireException("No puedes ayudar a un enemigo");
 		}
 		
 		duration --;

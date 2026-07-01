@@ -5,6 +5,6 @@ import character.Character;
 import spell.Spell;
 
 public interface Wizard {
-	void attack(Character character, Spell spell);
-	void support();
+	void attack(Character target, String spellName);
+	void support(Character target, String spellName);
 }
