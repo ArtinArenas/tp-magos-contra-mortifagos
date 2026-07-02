@@ -206,6 +206,10 @@ public class BattalionDeathEater extends DeathEater {
 		}
 		return addReturn;
 	}
+
+	public boolean addDeathEater(DeathEater deathEater) {
+		return deathEaters.add(deathEater);
+	}
 	
 	@Override
 	public Spell getSpell(String spellName) {
