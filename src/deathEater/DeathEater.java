@@ -3,6 +3,8 @@ package deathEater;
 
 import character.Character;
 import character.CharacterType;
+import spell.Spell;
+import spell.SpellType;
 
 public abstract class DeathEater extends Character {
 	public DeathEater(String name, int magicLevel, int healthPoints, int defense, double accuracy) {
@@ -15,5 +17,6 @@ public abstract class DeathEater extends Character {
 	
 	void specialSpell(Character target) {
 		
+		state = state.castSpell(this, target, spell);
 	}
 }

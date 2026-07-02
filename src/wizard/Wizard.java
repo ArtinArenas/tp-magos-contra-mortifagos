@@ -3,6 +3,8 @@ package wizard;
 
 import character.Character;
 import character.CharacterType;
+import spell.Spell;
+import spell.SpellType;
 
 public abstract class Wizard extends Character {
 	public Wizard(String name, int magicLevel, int healthPoints, int defense, double accuracy) {
@@ -15,5 +17,6 @@ public abstract class Wizard extends Character {
 
 	void support(Character target) {
 		
+		state = state.castSpell(this, target, spell);
 	}
 }
