@@ -16,7 +16,7 @@ import exceptions.AllyFireException;
 import exceptions.AllyNerfException;
 import exceptions.AutoAttackException;
 import exceptions.HelpEnemyException;
-import exceptions.InvalidSpellTypeException;
+//import exceptions.InvalidSpellTypeException;
 import exceptions.SpellNotFoundException;
 import exceptions.SpellTypeException;
 
@@ -235,7 +235,8 @@ public abstract class Character {
 			throw new IllegalArgumentException("El objetivo no puede ser nulo");
 		}
 		if(spell.getType() != type) {
-			throw new InvalidSpellTypeException("El hechizo no es de tipo " + type);
+			//throw new InvalidSpellTypeException("El hechizo no es de tipo " + type);
+			throw new IllegalArgumentException("El hechizo no es de tipo " + type);
 		}
 		if(!spells.contains(spell)) {
 			throw new SpellTypeException(name + " no posee el hechizo " + spellName);
