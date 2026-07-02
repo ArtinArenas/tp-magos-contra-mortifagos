@@ -2,6 +2,7 @@ package deathEater;
 // Agrupa a varios mortífagos en una unidad.
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -23,6 +24,7 @@ public class BattalionDeathEater extends DeathEater {
 	public BattalionDeathEater() {
 		super("BattalionDeathEater", 0, 0, 0, 0);
 		deathEaters = new ArrayList<DeathEater>();
+		spellHistory = new HashMap<DeathEater, List<Spell>>();
 	}
 
 	@Override

@@ -2,6 +2,7 @@ package wizard;
 // Agrupa a varios magos en una unidad de combate.
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -21,6 +22,7 @@ public class BattalionWizard extends Wizard {
 	public BattalionWizard() {
 		super("BattalionWizard", 0, 0, 0, 0);
 		wizards = new HashSet<Wizard>();
+		spellHistory = new HashMap<Wizard, List<Spell>>();
 	}
 	
 	public boolean addWizard(Wizard wizard) {
