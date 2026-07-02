@@ -9,7 +9,11 @@ public abstract class DeathEater extends Character {
 		super(name, magicLevel, healthPoints, defense, accuracy, CharacterType.DEATHEATER);
 	}
 	
-	void specialSpell(Character target, String spellName) {
+	void attack(Character target) {
+		
+	}
+	
+	void specialSpell(Character target) {
 		
 	}
 }
